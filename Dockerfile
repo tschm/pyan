@@ -1,8 +1,8 @@
 # Set the base image to Ubuntu, use a public image
-FROM continuumio/miniconda3
+FROM python:3.6-alpine
 
-RUN apt-get -y update && \
-    apt-get install -y graphviz
+MAINTAINER Thomas Schmelzer "thomas.schmelzer@gmail.com"
+RUN apk add --update --no-cache graphviz ttf-freefont
 
 # copy only the package
 COPY ./pyan /pyan/pyan

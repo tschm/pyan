@@ -1,3 +1,4 @@
 .idea
 *.dot
 *.svg
+build.sh
