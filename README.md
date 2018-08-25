@@ -17,3 +17,4 @@ docker run \
        dot -Tsvg /pyan/graph/graph.dot \
        > graph/graph.svg
 ```
+Please check https://github.com/davidfraser/pyan and the links therein for a background on pyan.
