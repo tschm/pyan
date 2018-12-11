@@ -2,3 +2,4 @@
 *.dot
 *.svg
 build.sh
+*__pycache__
