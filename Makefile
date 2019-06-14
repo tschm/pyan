@@ -2,11 +2,11 @@
 PROJECT_VERSION := 0.02
 
 SHELL := /bin/bash
-PACKAGE := pyah
+PACKAGE := pyan
 IMAGE := tschm/pyan
 
 
-.PHONY: help build test tag hub
+.PHONY: help build test tag hub clean
 
 
 .DEFAULT: help
@@ -23,7 +23,7 @@ help:
 
 
 build:
-	docker build -t pyan:latest .
+	docker build -t ${IMAGE}:latest .
 
 
 tag:
@@ -36,3 +36,6 @@ hub: tag
 	docker tag ${IMAGE}:latest ${IMAGE}:${PROJECT_VERSION}
 	docker push ${IMAGE}:${PROJECT_VERSION}
 	docker rmi -f ${IMAGE}:${PROJECT_VERSION}
+
+clean:
+	docker rmi -f ${IMAGE}
