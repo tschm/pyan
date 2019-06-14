@@ -2,6 +2,7 @@
 FROM python:3.6-alpine
 
 MAINTAINER Thomas Schmelzer "thomas.schmelzer@gmail.com"
+
 RUN apk add --update --no-cache graphviz ttf-freefont
 
 # copy only the package
