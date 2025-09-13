@@ -1,5 +1,5 @@
 # Set the base image to Ubuntu, use a public image
-FROM python:3.6-alpine
+FROM python:3.13-alpine
 
 MAINTAINER Thomas Schmelzer "thomas.schmelzer@gmail.com"
 
